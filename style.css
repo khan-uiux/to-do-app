@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.taskContainer {
+    background-color: #B0CFFB;
+    width: 100%;
+    height: 100vh;
+    padding-top: 30px;
+}
+.card {
+    width: 50%;
+    margin: auto;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #fff;
+}
+.inputArea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0px 0px 0px;
+}
+#inputBox {
+    width: 80%;
+    height: 45px;
+    border-radius: 6px;
+    padding: 5px 0px 5px 10px;
+    border: none;
+    font-size: 17px;
+    background-color: rgb(61, 61, 61);
+    color: #fff;
+}
+#inputBox:focus {
+    outline: none;
+    box-shadow: none;
+}
+button.addTask {
+    background: #ff3b00;
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+.listItem {
+    font-size: 17px;
+    line-height: 40px;
+    list-style-type: none;
+    position: relative;
+    padding-left: 50px;
+    display: flex;
+    align-items: center;
+}
+.listItem::before {
+    content: '';
+    position: absolute;
+    background-image: url(images/checkbox.png);
+    width: 32px;
+    height: 32px;
+    left: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+}
+.listItem {
+    display: flex;
+    justify-content: space-between;
+}
+.listItem span {
+    display: flex;
+}
+.listItem span img {
+    background-color: #b0cffb;
+    border-radius: 20px;
+    width: 30px;
+    height: auto;
+    padding: 4px;
+    cursor: pointer;
+}
+.ulList {
+    margin-top: 20px;
+}
+.listItem.checked::before {
+    background-image: url('images/check.png');
+  }
