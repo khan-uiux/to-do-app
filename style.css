@@ -86,3 +86,12 @@ button.addTask {
 .listItem.checked::before {
     background-image: url('images/check.png');
   }
+@media screen and (max-width: 768px) {
+    .card {
+        width: 100%;
+        padding: 9px;
+    }
+    #inputBox {
+        width: 67%;
+    }
+  }
